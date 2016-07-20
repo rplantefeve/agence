@@ -13,7 +13,7 @@ import vol.model.Aeroport;
 public class AeroportDaoSQL implements AeroportDao {
 
 	/**
-	 * Commentaire
+	 * Constructeur
 	 */
 	public AeroportDaoSQL() {
 		try {
