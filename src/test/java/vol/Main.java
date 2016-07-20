@@ -115,14 +115,7 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		cl1.setNom("Constantin");
-		cl1.setPrenom("Luis");
-		cl1.setNumeroTel("0556987456");
-		cl1.setNumeroFax("0447896523");
-		cl1.setLog(log1);
-		cl1.setListReservations(null);
-		cl1.setAdresse(add1);
-		cl1.setEmail("constlui@gmail.com");
+		testClient(log1, add1, cl1);
 
 		aeroDao.create(aimeeCesaire);
 		aimeeCesaire.setNom("FDF");
@@ -181,6 +174,17 @@ public class Main {
 		
 		
 
+	}
+
+	private static void testClient(Login log1, Adresse add1, Client cl1) {
+		cl1.setNom("Constantin");
+		cl1.setPrenom("Luis");
+		cl1.setNumeroTel("0556987456");
+		cl1.setNumeroFax("0447896523");
+		cl1.setLog(log1);
+		cl1.setListReservations(null);
+		cl1.setAdresse(add1);
+		cl1.setEmail("constlui@gmail.com");
 	}
 
 }
