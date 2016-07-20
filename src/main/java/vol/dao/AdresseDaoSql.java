@@ -19,6 +19,9 @@ public class AdresseDaoSql implements AdresseDao {
 
 	private Connection connexion;
 	
+	/**
+	 * Constructeur par défaut
+	 */
 	public AdresseDaoSql() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
