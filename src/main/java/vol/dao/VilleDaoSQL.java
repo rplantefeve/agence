@@ -10,6 +10,11 @@ import java.util.List;
 
 import vol.model.Ville;
 
+/**
+ * Permet la synchronisation entre l'objet métier Ville et la BDD
+ * @author Seme
+ *
+ */
 public class VilleDaoSQL implements VilleDao {
 
 	public VilleDaoSQL() {
