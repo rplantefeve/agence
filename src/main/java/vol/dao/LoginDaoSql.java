@@ -10,6 +10,11 @@ import java.util.List;
 
 import vol.model.Login;
 
+/**
+ * Fait la liaison entre la classe login et la base de données
+ * @author ajc
+ *
+ */
 public class LoginDaoSql implements LoginDao{
 
 	private Connection connexion;
