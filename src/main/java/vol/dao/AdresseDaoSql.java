@@ -10,6 +10,11 @@ import java.util.List;
 
 import vol.model.Adresse;
 
+/**
+ * Synchronisation du BO à la BDD
+ * @author ajc
+ *
+ */
 public class AdresseDaoSql implements AdresseDao {
 
 	private Connection connexion;
