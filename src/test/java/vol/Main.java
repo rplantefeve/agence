@@ -1,6 +1,5 @@
 package vol;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,7 +18,6 @@ import vol.dao.PassagerDao;
 import vol.dao.PassagerDaoSQL;
 import vol.dao.ReservationDao;
 import vol.dao.ReservationDaoSQL;
-import vol.dao.VilleAeroportDaoSql;
 import vol.dao.VilleDao;
 import vol.dao.VilleDaoSQL;
 import vol.dao.VolDao;
@@ -73,10 +71,7 @@ public class Main {
 
 		Ville fortDeFrance = new Ville(100, "Fort Da France");
 
-		Login log1 = new Login(100);
-		log1.setLogin("preview");
-		log1.setMotDePasse("user");
-		log1.setAdmin(0);
+		Login log1 = testLogin();
 
 		Adresse add1 = new Adresse(100);
 		add1.setAdresse("15 residence du camion");
@@ -182,5 +177,17 @@ public class Main {
 		
 
 	}
+
+    /**
+     * @return
+     */
+    private static Login testLogin()
+    {
+        Login log1 = new Login(100);
+		log1.setLogin("preview");
+		log1.setMotDePasse("user");
+		log1.setAdmin(0);
+        return log1;
+    }
 
 }
