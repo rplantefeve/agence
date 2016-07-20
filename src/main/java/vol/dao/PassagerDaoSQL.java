@@ -12,6 +12,9 @@ import vol.model.Passager;
 
 public class PassagerDaoSQL implements PassagerDao {
 	
+	/*
+	 * Connexion BDD
+	 */
 	private Connection connexion;
 
 	public PassagerDaoSQL() {
