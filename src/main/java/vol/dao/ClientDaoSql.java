@@ -1,5 +1,6 @@
 package vol.dao;
 
+// liste des imports
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,6 +20,10 @@ public class ClientDaoSql implements ClientDao {
 
 	private Connection connexion;
 
+	/**
+	 * constructeur
+	 * 
+	 */
 	public ClientDaoSql() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
