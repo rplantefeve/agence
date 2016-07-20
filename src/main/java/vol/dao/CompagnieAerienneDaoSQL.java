@@ -1,5 +1,5 @@
 package vol.dao;
-
+// Liste des import
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -10,8 +10,13 @@ import java.util.List;
 
 import vol.model.CompagnieAerienne;
 
+/**
+ * Lien entre BDD et objet metiers
+ * @author ajc
+ *
+ */
 public class CompagnieAerienneDaoSQL implements CompagnieAerienneDao {
-
+// faite que ça marche
 	public CompagnieAerienneDaoSQL() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
