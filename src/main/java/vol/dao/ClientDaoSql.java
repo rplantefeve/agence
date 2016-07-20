@@ -28,6 +28,10 @@ public class ClientDaoSql implements ClientDao {
 		}
 	}
 
+	/**
+	 * Permet la fermeture de la connexion
+	 * 
+	 */
 	public void fermetureConnexion() {
 		try {
 			connexion.close();
