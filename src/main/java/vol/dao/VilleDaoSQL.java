@@ -17,6 +17,9 @@ import vol.model.Ville;
  */
 public class VilleDaoSQL implements VilleDao {
 
+	/**
+	 * Constructeur
+	 */
 	public VilleDaoSQL() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
