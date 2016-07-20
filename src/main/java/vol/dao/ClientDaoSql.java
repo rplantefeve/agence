@@ -10,6 +10,11 @@ import java.util.List;
 
 import vol.model.Client;
 
+/**
+ * Permet la synchronisation entre l'objet Client et la BDD
+ * @author ajc
+ *
+ */
 public class ClientDaoSql implements ClientDao {
 
 	private Connection connexion;
