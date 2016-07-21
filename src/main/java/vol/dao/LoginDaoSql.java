@@ -17,6 +17,9 @@ import vol.model.Login;
  */
 public class LoginDaoSql implements LoginDao{
 
+	/**
+	 * l'attribut qui stock la connection à la base de données
+	 */
 	private Connection connexion;
 	
 	public LoginDaoSql() {
